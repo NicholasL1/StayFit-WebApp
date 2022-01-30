@@ -143,8 +143,8 @@ function Signup() {
                         </button>
                         <h3 className={classes.logIn}>
                             Already have an account? Log in <br />
-                            <a href="/signup">
-                                <Link to="/signup" style={{color: "#990099"}}>Here</Link>
+                            <a href="/login">
+                                <Link to="/login" style={{color: "#990099"}}>Here</Link>
                             </a>           
                         </h3>
                         <h2 style={{color: "#E2E7EB"}}>{success}</h2>
