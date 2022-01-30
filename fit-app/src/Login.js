@@ -118,9 +118,7 @@ function Signup() {
                         </button>
                         <h3 className={classes.logIn}>
                             Already have an account? Log in <br />
-                            <a href="/signup">
-                                <Link to="/signup" style={{color: "#990099"}}>Here</Link>
-                            </a>           
+                            <Link to="/signup" style={{color: "#990099"}}>Here</Link>           
                         </h3>
                     </div>
                 </form>
