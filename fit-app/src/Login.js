@@ -2,6 +2,7 @@ import { makeStyles } from '@material-ui/core';
 import React from 'react'
 import { useState } from 'react';
 import Axios from "axios";
+import { Link } from 'react-router-dom';
 
 const styles = makeStyles({
     
@@ -115,7 +116,12 @@ function Signup() {
                         <button className={classes.button} onClick={checkValidity}>
                             Login
                         </button>
-                        <h3 className={classes.logIn}>Dont have an account? Sign up <a style={{color: "#990099"}} href="/signup">Here</a></h3>
+                        <h3 className={classes.logIn}>
+                            Already have an account? Log in <br />
+                            <a href="/signup">
+                                <Link to="/signup" style={{color: "#990099"}}>Here</Link>
+                            </a>           
+                        </h3>
                     </div>
                 </form>
             </div>
