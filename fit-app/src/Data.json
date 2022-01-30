@@ -1,0 +1,204 @@
+[
+    {
+      "focus": "Chest",
+      "workout": "Pushup",
+      "imageLink": "./images/pushup.gif",
+      "link": "https://en.wikipedia.org/wiki/Push-up",
+      "desc": "Simple bodyweight exercise primarily working your pectoralis muscle.\nAlso works: Shoulders and Triceps.",
+      "index": 0,
+      "picture": "./images/muscleanatomyfront.jpg"
+    },
+    {
+        "focus": "Chest",
+        "workout": "Bench Press",
+        "imageLink": "./images/benchpress.gif",
+        "link": "https://en.wikipedia.org/wiki/Bench_press",
+        "desc": "Barbell exercise in which lifter lays down and presses weight vertically, primarily working the pectoralis muscle.\n Also works: Shoulders and Triceps.",
+        "index": 1,
+        "picture": "./images/muscleanatomyback.jpg"
+      },
+      {
+        "focus": "Chest",
+        "workout": "Pec Flys",
+        "imageLink": "./images/pecflys.gif",
+        "link": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+        "desc": "Machine assisted or freeweight exercise primarily focusing on your pectoralis muscle.\nAlso works: Shoulders and Triceps.",
+        "index": 2
+      },
+      {
+        "focus": "Bicep",
+        "workout": "Hammer Curls",
+        "imageLink": "./images/hammercurls.gif",
+        "link": "https://en.wikipedia.org/wiki/Biceps_curl",
+        "desc": "Simple dumbbell exercise where weight is curled upward with fist in a hammer-like position.\nWorks the bicep.",
+        "index": 3
+      },
+      {
+        "focus": "Bicep",
+        "workout": "Preacher Curls",
+        "imageLink": "./images/preachercurls.gif",
+        "link": "https://en.wikipedia.org/wiki/Biceps_curl",
+        "desc": "Dumbbell or barbell exercise where lifter rests arms on inclined surface and curls weight toward them.\nWorks the bicep.",
+        "index": 4
+      },
+      {
+        "focus": "Bicep",
+        "workout": "Inclined Dumbbell Curls",
+        "imageLink": "./images/inclinecurls.gif",
+        "link": "https://en.wikipedia.org/wiki/Biceps_curl",
+        "desc": "Simple dumbbell exercise where lifter lays on inclined surface, holds weight to the side, and curls upward.\nWorks the bicep.",
+        "index": 5
+      },
+      {
+        "focus": "Tricep",
+        "workout": "Tricep Extensions",
+        "imageLink": "./images/overextension.gif",
+        "link": "https://musclewiki.com/Exercises/Male/Triceps",
+        "desc": "Simple dumbbell exercise where lifter stands straight or sits on flat surface with weight above their head, extending their arm to a straight vertical position.\nMay also work core if standing.",
+        "index": 6
+      },
+      {
+        "focus": "Tricep",
+        "workout": "Cable Pushdowns",
+        "imageLink": "./images/cablepushdown.gif",
+        "link": "https://musclewiki.com/Exercises/Male/Triceps",
+        "desc": "Machine assisted exercise where lifter extends arm downward, simultaneously lifting specified weight upward.",
+        "index": 7
+      },
+      {
+        "focus": "Tricep",
+        "workout": "Tricep Bench Dips",
+        "imageLink": "./images/benchdips.gif",
+        "link": "https://musclewiki.com/Exercises/Male/Triceps",
+        "desc": "Bodyweight exercise where lifter holds themself up with their arms on a elevated flat surface, moving vertically downward then upward.\nAlso works: Shoulders and chest.",
+        "index": 8
+      },
+      {
+        "focus": "Abs",
+        "workout": "Bicycle Crunch",
+        "imageLink": "./images/bicyclecrunch.gif",
+        "link": "https://en.wikipedia.org/wiki/Crunch_(exercise)",
+        "desc": "Bodyweight exercise where lifter lays on flat surface and moves legs in a similar motion to that of riding a bicycle.",
+        "index": 9
+      },
+      {
+        "focus": "Abs",
+        "workout": "Plank",
+        "imageLink": "./images/planks.gif",
+        "link": "https://en.wikipedia.org/wiki/Plank_(exercise)",
+        "desc": "Bodyweight exercise where lifter holds themself up on flat surface making a plank like structure with their body. Motion is held for as long as possible.",
+        "index": 10
+      },
+      {
+        "focus": "Abs",
+        "workout": "Reverse Crunch",
+        "imageLink": "./images/reversecrunch.gif",
+        "link": "https://blackbeltwiki.com/reverse-crunches",
+        "desc": "Bodyweight exercise where lifter lays down and brings their knees toward their face, emphasizing the use of abdominal muscles.",
+        "index": 11
+      },
+      {
+        "focus": "Quads",
+        "workout": "Front Squat",
+        "imageLink": "./images/frontsquat.gif",
+        "link": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+        "desc": "Barbell exercise where lifter holds barbell in front of their head and performs a squat.\nAlso works: hamstring and glutes.",
+        "index": 12
+      },
+      {
+        "focus": "Quads",
+        "workout": "Bulgarian Split Squat",
+        "imageLink": "./images/splitsquat.gif",
+        "link": "https://www.healthline.com/health/fitness-exercise/bulgarian-split-squat#benefits",
+        "desc": "Difficult exercise where lifter places one leg on elevated surface and performs a squat with the other.\nAdditional weight is encouraged, which can be added by holding dumbbells at side of body.\nAlso works: hamstrings and glutes.",
+        "index": 13
+      },
+      {
+        "focus": "Quads",
+        "workout": "Leg Press",
+        "imageLink": "./images/legpress.gif",
+        "link": "https://en.wikipedia.org/wiki/Leg_press",
+        "desc": "Machine assisted exercise where lifter presses specified weight on an upward incline using their legs only.\nAlso works: hamstrings and glutes.",
+        "index": 14
+      },
+      {
+        "focus": "Back",
+        "workout": "Pullups",
+        "imageLink": "./images/pullups.gif",
+        "link": "https://en.wikipedia.org/wiki/Pull-up_(exercise)",
+        "desc": "Difficult bodyweight exercise where lifter holds their bodyweight up by a bar and pulls themself up repeatedly. Primarily works lats and biceps.",
+        "index": 15
+      },
+      {
+        "focus": "Back",
+        "workout": "Barbell Rows",
+        "imageLink": "./images/rows.gif",
+        "link": "https://en.wikipedia.org/wiki/Bent-over_row",
+        "desc": "Barbell exercise where lifter holds weight while facing downward and pulls it up toward their stomach.\nPrimarily works lats and biceps.",
+        "index": 16
+      },
+      {
+        "focus": "Back",
+        "workout": "Deadlifts",
+        "imageLink": "./images/deadlifts.gif",
+        "link": "https://en.wikipedia.org/wiki/Deadlift",
+        "desc": "Difficult barbell exercise where lifter picks up heavy weight from a low position and stands straight up with it.\nWorks: back, traps, core, glutes, and hamstrings.",
+        "index": 17
+      },
+      {
+        "focus": "Shoulders",
+        "workout": "Overhead Press",
+        "imageLink": "./images/overheadpress.gif",
+        "link": "https://musclewiki.com/Exercises/Male/Shoulders",
+        "desc": "Barbell or dumbbell exercise where lifter holds weight near head and presses upward. Also works: chest, lats, and triceps.",
+        "index": 18
+      },
+      {
+        "focus": "Shoulders",
+        "workout": "Inclined Bench Press",
+        "imageLink": "./images/inclinebench.gif",
+        "link": "https://en.wikipedia.org/wiki/Bench_press",
+        "desc": "Barbell exercise where lifter performs a simple benchpress on a bench that is inclined. Also works: chest and triceps.",
+        "index": 19
+      },
+      {
+        "focus": "Shoulders",
+        "workout": "Dumbbell Lateral Raise",
+        "imageLink": "./images/latraise.gif",
+        "link": "https://musclewiki.com/Exercises/Male/Shoulders/2",
+        "desc": "Dumbbell exercise in which lifter holds weight to their sides, pulling weight upward until dumbbells are aligned with shoulders.",
+        "index": 20
+      },
+      {
+        "focus": "Hamstrings",
+        "workout": "Romanian Deadlifts",
+        "imageLink": "./images/rdl.gif",
+        "link": "https://barbend.com/romanian-deadlift/",
+        "desc": "Barbell or dumbbell exercise where lifter picks weight off the ground keeping relatively straight legs.",
+        "index": 21
+      },
+      {
+        "focus": "Hamstrings",
+        "workout": "Back Squats",
+        "imageLink": "./images/backsquats.gif",
+        "link": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+        "desc": "Barbell exercise where lifter holds weight on their back behind their head and performs a squat.\nAlso works: glutes and hamstrings.",
+        "index": 22
+      },
+      {
+        "focus": "Hamstrings",
+        "workout": "Leg Curls",
+        "imageLink": "./images/legcurls.gif",
+        "link": "https://en.wikipedia.org/wiki/Leg_curl#:~:text=The%20leg%20curl%2C%20also%20known,against%20resistance%20towards%20the%20buttocks.&text=Other%20exercises%20that%20can%20be,ham%20raise%20and%20the%20deadlift.",
+        "desc": "Simple machine assisted exercise where lifter lays on stomach and brings heels to glutes, simultaneously lifting specified weight.",
+        "index": 23
+      },
+      {
+        "focus": "Null",
+        "workout": "Select workout...",
+        "imageLink": "./images/gymbaby.gif",
+        "link": "",
+        "desc": "Not available.",
+        "index": 24
+      }
+  ]
