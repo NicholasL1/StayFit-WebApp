@@ -43,6 +43,7 @@ const styles = makeStyles({
           },
     },
     button: {
+        cursor: "pointer",
         fontFamily: "Nunito",
         display: "flex",
         alignItems: "center",
