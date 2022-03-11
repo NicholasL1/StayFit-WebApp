@@ -67,7 +67,7 @@ const styles = makeStyles({
     },
     button: {
         float: "right",
-        height: "20px",
+        height: "18px",
         borderRadius: "5px",
         fontFamily: "Nunito",
         textAlign: "center",
