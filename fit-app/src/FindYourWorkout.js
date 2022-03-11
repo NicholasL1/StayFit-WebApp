@@ -18,7 +18,7 @@ const styles = makeStyles({
     boxOne: {
         height: "550px",
         width: "28%",
-        marginLeft: "60px",
+        marginLeft: "30px",
         marginTop: "100px",
         backgroundColor: "#E2E7EB",
         boxShadow: "5px 5px 5px 5px #0d0d0d",
