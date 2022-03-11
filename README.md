@@ -6,3 +6,5 @@ HOW IT WAS BUILT:
 
 The front-end was developed using React, primarily in jsx, html and css. The back-end uses a MySQL database, Express.js, node.js, as well as a JSON file.
 
+ACCESS SITE:
+
