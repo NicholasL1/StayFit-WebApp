@@ -8,3 +8,4 @@ The front-end was developed using React, primarily in jsx, html and css. The bac
 
 ACCESS SITE:
 
+https://blissful-jang-4cfa2c.netlify.app/
