@@ -15,9 +15,11 @@ the necessary exercise information.
 # HOW TO USE:
 To run this application make sure to call:
 
-### `npm i`
-### `npm i aos`
-### `npm i react-router-dom`
+#### `npm i`
+#### `npm i aos`
+#### `npm i react-router-dom`
+#### `npm i @material-ui/core`
+#### `npm i @material-ui/icons`
 
 in your dedicated terminal to install all the necessary dependancies.
 Then start the app with:
