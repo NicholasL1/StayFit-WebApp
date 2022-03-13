@@ -13,7 +13,7 @@ The front-end was developed using React, primarily in jsx, html and css. The bac
 the necessary exercise information.
 
 # HOW TO CREATE:
-Before downloading the necessary depndancies, make sure express.js and node.js is installed.
+Before downloading the necessary modules, make sure express.js and node.js is installed.
 To recreate this application make sure to call:
 
 ### `npx create-react-app app-name`
