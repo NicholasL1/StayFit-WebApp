@@ -1,5 +1,5 @@
 # Check it out!:
-https://blissful-jang-4cfa2c.netlify.app/
+https://stayfit-app.netlify.app
 
 <img width="1404" alt="Screen Shot 2022-03-10 at 9 03 27 PM" src="https://user-images.githubusercontent.com/77363160/157788296-c8423d8b-f8f5-4e9d-b5ee-bfc4fe61b598.png">
 
