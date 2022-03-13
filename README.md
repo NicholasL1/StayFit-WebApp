@@ -16,6 +16,8 @@ the necessary exercise information.
 To run this application make sure to call:
 
 ### `npm i`
+### `npm i aos`
+### `npm i react-router-dom`
 
 in your dedicated terminal to install all the necessary dependancies.
 Then start the app with:
