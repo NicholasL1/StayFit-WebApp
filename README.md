@@ -1,3 +1,6 @@
+# Check it out!:
+
+
 # ABOUT THIS PROJECT:
 
 StayFit is a web application that helps users start and track their fitness journey. StayFit comes with a BMI calculator, a mini-exercise wiki, and an intuitive workout planner. StayFit also has a register feature, in which users who want to save or access their info may sign up or log in to the website.
