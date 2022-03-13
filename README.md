@@ -13,7 +13,14 @@ The front-end was developed using React, primarily in jsx, html and css. The bac
 the necessary exercise information.
 
 # HOW TO USE:
-To run this application 
+To run this application make sure to call:
+
+### `npm i`
+
+in your dedicated terminal to install all the necessary dependancies.
+Then start the app with:
+
+### `npm run start`
 
 <img width="1403" alt="Screen Shot 2022-03-10 at 9 04 35 PM" src="https://user-images.githubusercontent.com/77363160/157788315-e1176f9f-cfb9-4732-9bdd-7a1edc90b02b.png">
 
