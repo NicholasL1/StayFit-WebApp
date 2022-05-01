@@ -123,7 +123,7 @@ const styles = makeStyles({
       backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/floorweights.jpg'})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
-      marginTop: "250px",
+      margin: 'auto',
       overflow: "auto",
     },
 
