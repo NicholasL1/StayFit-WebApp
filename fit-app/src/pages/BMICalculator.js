@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, ThemeProvider } from '@material-ui/core';
 import { useState } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -11,12 +11,12 @@ const styles = makeStyles({
         float: "left",
         backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/bmibackground.jpg'})`,
         backgroundRepeat: 'no-repeat',
-        backgroundSize: '1600px',
-        height: "1000px",
+        backgroundSize: '1690px',
+        height: "861px",
     },
     title: {
         marginTop: "20px",
-        textAlign: "center", 
+        textAlign: "center",
         fontSize: "30px",
         marginBottom: "30px",
         color: "#666666",
@@ -48,7 +48,7 @@ const styles = makeStyles({
         height: "35px",
         padding: "0 20px",
         boxSizing: "border-box",
-        borderRadius: "8px", 
+        borderRadius: "8px",
         background: "#9CB3D3",
         color: "#fff",
         // boxShadow: "6px 6px 0 0 #c7d8ed",
@@ -56,11 +56,11 @@ const styles = makeStyles({
         margin: "10px 0",
         transition: "background .3s,border-color .3s,color .3s",
         "&:hover": {
-            backgroundColor:  "#3070F2"
-          },
+            backgroundColor: "#3070F2"
+        },
     },
     image: {
-        width: "40%",
+        width: "36%",
         height: "40%",
         float: "right",
         marginRight: "150px",
@@ -68,10 +68,7 @@ const styles = makeStyles({
         marginBottom: "100%",
         display: 'block',
         verticalAlign: "top",
-        boxShadow: "15px 35px 10px 10px #404040",
-        '@media (max-width 360px)': {
-            paddingBottom: '1rem'
-        }
+        boxShadow: "20px 70px 8px 15px #404040",
     },
     dropdown: {
         display: "block",
@@ -85,7 +82,7 @@ const styles = makeStyles({
     },
     resultone: {
         fontSize: "30px",
-        color: "#666666", 
+        color: "#666666",
     },
     resulttwo: {
         fontSize: "20px",
@@ -96,7 +93,7 @@ const styles = makeStyles({
         fontSize: "20px",
         marginTop: "30px",
         marginLeft: "20px",
-        textAlign:"center",
+        textAlign: "center",
         color: "#000000",
         marginBottom: "10px",
     },
@@ -118,7 +115,7 @@ const styles = makeStyles({
 const BMICalculator = () => {
     useEffect(() => {
         Aos.init({ duration: 1500 });
-      }, [])
+    }, [])
 
     const [weight, setWeight] = useState("");
     const [height, setHeight] = useState("");
@@ -191,16 +188,17 @@ const BMICalculator = () => {
 
     const classes = styles();
     return (
-        <div className={classes.bmi}>
+        <ThemeProvider>
+            <div className={classes.bmi}>
                 <div className={classes.image} data-aos="fade-right">
-                    <img src="./images/bmiimage.jpg" alt="bmi"/>
+                    <img src="./images/bmiimage.jpg" alt="bmi" />
                 </div>
                 <div className={classes.form} data-aos="fade-left">
                     <form>
                         <h1 className={classes.title}>BMI Calculator</h1>
                         <div marginTop="80px">
                             <label className={classes.label}>Enter Weight:</label>
-                            <input className={classes.input} 
+                            <input className={classes.input}
                                 type="text"
                                 id='weight'
                                 value={weight}
@@ -211,27 +209,27 @@ const BMICalculator = () => {
                             <label className={classes.label}>Enter Height:</label>
                             <input className={classes.input}
                                 type="text"
-                                id='height'   
+                                id='height'
                                 value={height}
                                 onChange={(e) => setHeight(e.target.value)}
                             />
                         </div>
-                        <select 
+                        <select
                             className={classes.dropdown}
                             value={system}
                             onChange={(e) => setSystem(e.target.value)}>
-                            <option value = "metric">Metric (Kilograms/Metres)</option>
-                            <option value = "imperial">Imperial (Pounds/Inches)</option>
+                            <option value="metric">Metric (Kilograms/Metres)</option>
+                            <option value="imperial">Imperial (Pounds/Inches)</option>
                         </select>
-                        <button 
-                            type = "button" 
-                            className={classes.button} 
+                        <button
+                            type="button"
+                            className={classes.button}
                             onClick={calculateBMI}>Calculate BMI
                         </button>
                         {bmiValue && (
                             <div>
                                 <h1 className={classes.resultone}>Your BMI is: {bmiValue}</h1>
-                                <h2 className={classes.resulttwo}>{level}</h2> 
+                                <h2 className={classes.resulttwo}>{level}</h2>
                             </div>
                         )}
                         <div className={classes.feedback}>
@@ -239,9 +237,10 @@ const BMICalculator = () => {
                         </div>
                     </form>
                 </div>
-        </div>
+            </div>
+        </ThemeProvider>
     )
 }
 
- 
+
 export default BMICalculator;

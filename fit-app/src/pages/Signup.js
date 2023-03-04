@@ -5,14 +5,15 @@ import Axios from "axios";
 import { Link } from 'react-router-dom';
 
 const styles = makeStyles({
-    
+
     background: {
         width: "100%",
         float: "left",
+        alignContent: "center",
         backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/runningbackground.jpg'})`,
         backgroundRepeat: 'no-repeat',
-        backgroundSize: '1600px',
-        height: "1000px",
+        backgroundSize: '1690px',
+        height: "864px",
     },
     form: {
         marginTop: "120px",
@@ -25,7 +26,7 @@ const styles = makeStyles({
     },
     title: {
         marginTop: "20px",
-        textAlign: "center", 
+        textAlign: "center",
         fontSize: "30px",
         marginBottom: "20px",
         color: "#E2E7EB",
@@ -58,7 +59,7 @@ const styles = makeStyles({
         height: "35px",
         padding: "0 20px",
         boxSizing: "border-box",
-        borderRadius: "8px", 
+        borderRadius: "8px",
         background: "#1c3563",
         color: "#fff",
         // boxShadow: "6px 6px 0 0 #c7d8ed",
@@ -66,8 +67,8 @@ const styles = makeStyles({
         margin: "10px 0",
         transition: "background .3s,border-color .3s,color .3s",
         "&:hover": {
-            backgroundColor:  "#9CB3D3"
-          },
+            backgroundColor: "#9CB3D3"
+        },
     },
     logIn: {
         color: "#E2E7EB",
@@ -97,11 +98,11 @@ function Signup() {
         else {
             setSuccess("Email Verification Sent!");
             Axios.post('http://localhost:3001/register', {
-                username: email, 
+                username: email,
                 password: password
             });
         }
-    e.preventDefault();
+        e.preventDefault();
     }
 
     const classes = styles();
@@ -112,40 +113,40 @@ function Signup() {
                     <h1 className={classes.title}>Sign Up</h1>
                     <div>
                         <label className={classes.label}>Enter email:</label>
-                        <input className={classes.input} 
+                        <input className={classes.input}
                             type="text"
                             id="email"
                             placeholder='Email...'
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            />
-                        <h5 style={{color: "#ff0000", marginTop: "-7px"}}>{feedback1}</h5>
+                        />
+                        <h5 style={{ color: "#ff0000", marginTop: "-7px" }}>{feedback1}</h5>
                         <label className={classes.label}>Enter password:</label>
                         <input className={classes.input}
                             type="password"
-                            id = "password"
+                            id="password"
                             placeholder='Password...'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            />
-                        <h5 style={{color: "#ff0000", marginTop: "-7px"}}>{feedback2}</h5>
+                        />
+                        <h5 style={{ color: "#ff0000", marginTop: "-7px" }}>{feedback2}</h5>
                         <label className={classes.label}>Confirm password:</label>
                         <input className={classes.input}
                             type="password"
-                            id = "password2"
+                            id="password2"
                             placeholder='Password...'
                             value={password2}
                             onChange={(e) => setPassword2(e.target.value)}
-                            />
-                        <h5 style={{color: "#ff0000", marginTop: "-7px"}}>{feedback2}</h5>
+                        />
+                        <h5 style={{ color: "#ff0000", marginTop: "-7px" }}>{feedback2}</h5>
                         <button className={classes.button} onClick={checkValidity}>
                             Sign Up
                         </button>
                         <h3 className={classes.logIn}>
                             Already have an account? Log in <br />
-                            <Link to="/login" style={{color: "#990099"}}>Here</Link>           
+                            <Link to="/login" style={{ color: "#990099" }}>Here</Link>
                         </h3>
-                        <h2 style={{color: "#E2E7EB"}}>{success}</h2>
+                        <h2 style={{ color: "#E2E7EB" }}>{success}</h2>
                     </div>
                 </form>
             </div>
