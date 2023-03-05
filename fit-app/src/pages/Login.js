@@ -12,7 +12,7 @@ const styles = makeStyles({
         backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/runningbackground.jpg'})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: '1690px',
-        height: "864px",
+        height: "861px",
     },
     form: {
         marginTop: "120px",
@@ -79,12 +79,16 @@ function Signup() {
     const [email, setEmail] = useState("");
     const [feedback1, setFeedback1] = useState("");
 
-    const checkValidity = (e) => {
-        Axios.post('http://localhost:3001/register', {
-            username: email,
+    const checkLoginValidity = (e) => {
+        Axios.post('http://localhost:3001/login', {
+            email: email,
             password: password
         }).then((response) => {
-            setFeedback1("Successfully Logged in.")
+            if (response.data.message) {
+                setFeedback1(response.data.message)
+            } else {
+                setFeedback1("Successfully Logged in with " + response.data[0].email);
+            }
         });
         e.preventDefault();
     }
@@ -113,11 +117,11 @@ function Signup() {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                         <h5 style={{ color: "#ff0000", marginTop: "-7px" }}>{feedback1}</h5>
-                        <button className={classes.button} onClick={checkValidity}>
+                        <button className={classes.button} onClick={checkLoginValidity}>
                             Login
                         </button>
                         <h3 className={classes.logIn}>
-                            Already have an account? Log in <br />
+                            Don't have an account? Create one <br />
                             <Link to="/signup" style={{ color: "#990099" }}>Here</Link>
                         </h3>
                     </div>

@@ -13,7 +13,7 @@ const styles = makeStyles({
         backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/runningbackground.jpg'})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: '1690px',
-        height: "864px",
+        height: "861px",
     },
     form: {
         marginTop: "120px",
@@ -83,24 +83,27 @@ function Signup() {
     const [feedback2, setFeedback2] = useState("");
     const [success, setSuccess] = useState("");
 
-    const checkValidity = (e) => {
+    const register = () => {
+        Axios.post('http://localhost:3001/signup', { email: email, password: password }).then((response) => {
+            console.log(response);
+        });
+    }
+
+    const checkRegisterValidity = (e) => {
         setFeedback1("");
         setFeedback2("");
         if (email.includes("@") === false) {
             setFeedback1("Email not valid!");
         }
-        else if (email.includes(".com") === false) {
+        else if ((email.includes(".com") || email.includes(".ca")) === false) {
             setFeedback1("Email not valid!");
         }
         else if (password !== password2) {
             setFeedback2("Passwords do not match!");
         }
         else {
-            setSuccess("Email Verification Sent!");
-            Axios.post('http://localhost:3001/register', {
-                username: email,
-                password: password
-            });
+            setSuccess("Successfully Registered!");
+            register();
         }
         e.preventDefault();
     }
@@ -139,7 +142,7 @@ function Signup() {
                             onChange={(e) => setPassword2(e.target.value)}
                         />
                         <h5 style={{ color: "#ff0000", marginTop: "-7px" }}>{feedback2}</h5>
-                        <button className={classes.button} onClick={checkValidity}>
+                        <button className={classes.button} onClick={checkRegisterValidity}>
                             Sign Up
                         </button>
                         <h3 className={classes.logIn}>

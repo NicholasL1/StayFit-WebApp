@@ -10,7 +10,7 @@ const styles = makeStyles({
         backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/planbackground.jpg'})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: '1690px',
-        height: "864px",
+        height: "861px",
     },
     box: {
         width: "70%",
