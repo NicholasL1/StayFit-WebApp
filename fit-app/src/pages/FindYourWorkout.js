@@ -13,7 +13,7 @@ const styles = makeStyles({
         backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/findworkoutbackground.jpg'})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: '1690px',
-        height: "864px",
+        height: "861px",
     },
     boxOne: {
         height: "550px",
