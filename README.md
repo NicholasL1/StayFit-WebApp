@@ -11,19 +11,6 @@ StayFit is a web application that helps users start and track their fitness jour
 
 The front-end was developed using React, primarily in jsx, html and css. The back-end uses a MySQL database, javascript in a node.js runtime environment, the node.js framework express.js. The project also uses a JSON file storing the necessary exercise information.
 
-# HOW TO CREATE:
-Before downloading the necessary modules, make sure express.js and node.js is installed.
-To recreate this application make sure to call:
-
-### `npx create-react-app app-name`
-
-#### `npm i`
-
-in your dedicated terminal to install all the necessary dependancies.
-Then start the app with:
-
-### `npm run start`
-
 <img width="1403" alt="Screen Shot 2022-03-10 at 9 04 35 PM" src="https://user-images.githubusercontent.com/77363160/157788315-e1176f9f-cfb9-4732-9bdd-7a1edc90b02b.png">
 
 <img width="1404" alt="Screen Shot 2022-03-10 at 9 05 21 PM" src="https://user-images.githubusercontent.com/77363160/157789152-2e4ba5e8-bac4-4fbf-9942-5a107321ebe9.png">
