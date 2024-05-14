@@ -18,10 +18,6 @@ To recreate this application make sure to call:
 ### `npx create-react-app app-name`
 
 #### `npm i`
-#### `npm i aos`
-#### `npm i react-router-dom`
-#### `npm i @material-ui/core`
-#### `npm i @material-ui/icons`
 
 in your dedicated terminal to install all the necessary dependancies.
 Then start the app with:
